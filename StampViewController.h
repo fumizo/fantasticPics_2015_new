@@ -42,7 +42,7 @@
     CGAffineTransform startTransform;
     
     UIImage *capture; //キャプチャした画像
-
+    
 
 //    BOOL isReSize;//四隅のやつがいらなくなったらnoにいるときはonに
     

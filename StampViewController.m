@@ -326,6 +326,9 @@
 }
 
 -(IBAction)clearStamp{
+    
+    [self removeResizeButtons];
+
     for(int i = count; i !=0; i= i-1){
         [viewList[i-1] removeFromSuperview];
         
@@ -392,9 +395,9 @@
         wChange = (point.x - prevPoint.x); //Slow down increment
         hChange = (point.y - prevPoint.y); //Slow down increment
         
-        
-        stampImgView.bounds = CGRectMake(stampImgView.bounds.origin.x, stampImgView.bounds.origin.y, stampImgView.bounds.size.width + (wChange), stampImgView.bounds.size.height + (hChange));
-        stampImgView.frame = CGRectMake(12, 12, stampImgView.bounds.size.width-24, stampImgView.bounds.size.height-27);
+        stampView.bounds = CGRectMake(stampView.bounds.origin.x, stampView.bounds.origin.y, stampView.bounds.size.width + (wChange), stampView.bounds.size.height + (hChange));
+//        stampImgView.bounds = CGRectMake(stampImgView.bounds.origin.x, stampImgView.bounds.origin.y, stampImgView.bounds.size.width + (wChange), stampImgView.bounds.size.height + (hChange));
+        stampImgView.frame = CGRectMake(12, 12, stampView.bounds.size.width-24, stampView.bounds.size.height-27);
         
         resizeVw.frame =CGRectMake(stampImgView.bounds.size.width-25, stampImgView.bounds.size.height-25, 25, 25);
         rotateVw.frame = CGRectMake(0, stampImgView.bounds.size.height-25, 25, 25);
@@ -459,8 +462,38 @@
 -(IBAction)done{
     [self removeResizeButtons]; //四隅のやつがついたまま保存しないようにする
     [self capture];
-    UIImageWriteToSavedPhotosAlbum(capture, self, sel_registerName("savingImageIsFinished:didFinishSavingWithError:contextInfo"), nil);
+    UIImageWriteToSavedPhotosAlbum(capture, self, @selector(savingImageIsFinished:didFinishSavingWithError:contextInfo:), nil);
     
+}
+
+
+// 完了を知らせる
+- (void) savingImageIsFinished:(UIImage *)_image didFinishSavingWithError:(NSError *)_error contextInfo:(void *)_contextInfo
+{
+    NSLog(@"ここでインジケータでもだそうか！");
+    
+    UIAlertView *alert;
+    
+    if(_error){//エラーのとき
+        alert = [[UIAlertView alloc] initWithTitle:@""
+                                                        message:@"画像の保存に失敗しました。"
+                                                       delegate:nil
+                                              cancelButtonTitle:nil
+                                              otherButtonTitles:@"OK", nil
+                              ];
+        
+        [alert show];
+//        [alert release];
+        
+    }else{//保存できたとき
+        alert = [[UIAlertView alloc] initWithTitle:@""
+                                                        message:@"画像の保存に成功しました。"
+                                                       delegate:nil
+                                              cancelButtonTitle:nil
+                                              otherButtonTitles:@"OK", nil
+                              ];
+        [alert show];
+    }
 }
 
 /*

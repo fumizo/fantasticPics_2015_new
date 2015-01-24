@@ -27,6 +27,7 @@
 
 @interface ViewController : UIViewController <DBCameraViewControllerDelegate>{
     IBOutlet UIImageView *imageView;
+    IBOutlet UIButton *button;
 }
 
 -(IBAction)openingCamera ;

@@ -15,6 +15,14 @@
 
 @implementation ViewController
 
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog(@"%@, %@", button, button.imageView.image);
+    
+}
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];

@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <Social/Social.h>
+
 
 @interface DoneViewController : ViewController
 
--(IBAction)save;
 -(IBAction)twitter;
 -(IBAction)instagram;
 -(IBAction)backStart;
