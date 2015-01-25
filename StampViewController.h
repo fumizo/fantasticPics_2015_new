@@ -42,6 +42,9 @@
     CGAffineTransform startTransform;
     
     UIImage *capture; //キャプチャした画像
+    //ドラッグジェスチャー
+    UIPanGestureRecognizer *pan;
+
     
 
 //    BOOL isReSize;//四隅のやつがいらなくなったらnoにいるときはonに
@@ -57,6 +60,8 @@
 
 - (IBAction)backStamp;
 - (IBAction)clearStamp;
+
+- (void)panAction:(UIPanGestureRecognizer *)sender;
 
 
 @property IBOutlet UIImageView * photoView;

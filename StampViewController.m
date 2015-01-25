@@ -16,9 +16,6 @@
     UIImageView *making;
     
 }
-/*んーどうしてできひんねん*/
-//@synthesize photoView;
-//@synthesize photoImage;
 
 
 - (void)viewDidLoad {
@@ -82,6 +79,11 @@
         [stampScrool addSubview:tapbtn];
     }
     
+    //ドラッグジェスチャーを登録
+//    UIPanGestureRecognizer *pan;
+    pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
+//    (void)[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
+    [stampView addGestureRecognizer:pan];
     
 }
 
@@ -165,6 +167,7 @@
         //        [stampImgView setTag: index-1]; //今のスタンプにタグをつける。indexと同じ番号
         stampImgView.backgroundColor = [UIColor clearColor];
         stampView =  [[UIView alloc] initWithFrame:CGRectMake(0,0,stampImgView.frame.size.width,stampImgView.frame.size.height)];
+
         [stampView addSubview:stampImgView];
         index = 0;  //一回スタンプしたらindexを0にして、押せなくするのよ
         
@@ -442,6 +445,7 @@
     
     //画像の範囲を取得
     CGRect rect = self.photoView.bounds;
+    UIGraphicsBeginImageContextWithOptions(rect.size, self.photoView.opaque, 0.0); //画質を落とさない
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
@@ -494,6 +498,27 @@
                               ];
         [alert show];
     }
+}
+
+//ドラッグジェスチャー
+-(void)panAction:(UIPanGestureRecognizer *)sender{
+    //移動距離の取得
+    CGPoint p = [sender translationInView:self.view];
+
+    //移動した距離のx,yをスタンプに設定
+    CGPoint movedPoint = CGPointMake(stampView.center.x + p.x , stampView.center.y + p.y);
+    stampView.center = movedPoint;
+    NSLog(@"*座標%@を移動中...*", NSStringFromCGPoint(movedPoint));
+    //    pは構造体！文字列としてnslogする１
+    
+    //    移動した距離を初期かするこれがないと値が続きからになる
+    [sender setTranslation:CGPointZero inView:self.view];
+    
+    //ジェスチャー終了
+    if(sender.state == UIGestureRecognizerStateEnded){
+        NSLog(@"移動終了");
+    }
+
 }
 
 /*
