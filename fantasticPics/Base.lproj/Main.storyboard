@@ -106,7 +106,7 @@
         <!--Stamp View Controller-->
         <scene sceneID="3tW-ND-i7s">
             <objects>
-                <viewController storyboardIdentifier="stamp" id="c3H-Zx-qAH" customClass="StampViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StampViewController" id="c3H-Zx-qAH" customClass="StampViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UOg-c9-xWJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +161,6 @@
                                 </state>
                                 <connections>
                                     <action selector="done" destination="c3H-Zx-qAH" eventType="touchUpInside" id="PFC-g7-b8d"/>
-                                    <segue destination="DBb-ea-k0D" kind="modal" id="5gY-9s-NjS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -180,7 +179,7 @@
         <!--Done View Controller-->
         <scene sceneID="6vn-vd-dAU">
             <objects>
-                <viewController id="DBb-ea-k0D" customClass="DoneViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DoneViewController" id="DBb-ea-k0D" customClass="DoneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lg2-bx-G7e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,19 +226,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPg-sn-afi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="872" y="243"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="wgL-ow-LJ5">
-            <objects>
-                <viewController id="C0A-tL-Jbu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="L4m-AU-WJ0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eYB-hm-QcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>

@@ -500,6 +500,26 @@
     }
 }
 
+//アラートのokしたら画面遷移
+// アラートのボタンが押された時に呼ばれるデリゲート例文
+-(void)alertView:(UIAlertView*)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    switch (buttonIndex) {
+        case 0:
+            //１番目のボタンが押されたときの処理を記述する
+            
+            DoneViewController *secondVC =  [self.storyboard instantiateViewControllerWithIdentifier:@"DoneViewController"];
+            [self presentViewController:secondVC animated:YES completion:nil];//YESならModal,Noなら何もなし
+
+            break;
+        case 1:
+            //２番目のボタンが押されたときの処理を記述する
+            break;
+    }
+    
+}
+
 //ドラッグジェスチャー
 -(void)panAction:(UIPanGestureRecognizer *)sender{
     //移動距離の取得
@@ -509,9 +529,7 @@
     CGPoint movedPoint = CGPointMake(stampView.center.x + p.x , stampView.center.y + p.y);
     stampView.center = movedPoint;
     NSLog(@"*座標%@を移動中...*", NSStringFromCGPoint(movedPoint));
-    //    pは構造体！文字列としてnslogする１
-    
-    //    移動した距離を初期かするこれがないと値が続きからになる
+    //    移動した距離を初期化
     [sender setTranslation:CGPointZero inView:self.view];
     
     //ジェスチャー終了

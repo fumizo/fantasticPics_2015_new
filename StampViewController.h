@@ -12,6 +12,7 @@
 #import "DBCameraViewController.h"
 #import "DBCameraContainerViewController.h"
 #import "DBCameraSegueViewController.h"
+#import "DoneViewController.h"
 @interface StampViewController : UIViewController<DBCameraViewControllerDelegate , UIGestureRecognizerDelegate>{
     
     NSString *stampArray[6];
