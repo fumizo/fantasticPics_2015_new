@@ -7,6 +7,7 @@
 //
 
 #import "StampViewController.h"
+#import "DoneViewController.h"
 
 @interface StampViewController ()
 
@@ -509,8 +510,8 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
         case 0:
             //１番目のボタンが押されたときの処理を記述する
             
-            DoneViewController *secondVC =  [self.storyboard instantiateViewControllerWithIdentifier:@"DoneViewController"];
-            [self presentViewController:secondVC animated:YES completion:nil];//YESならModal,Noなら何もなし
+             DoneViewController *doneVC =  [self.storyboard instantiateViewControllerWithIdentifier:@"DoneViewController"];
+            [self presentViewController:doneVC animated:YES completion:nil];//YESならModal,Noなら何もなし
 
             break;
         case 1:

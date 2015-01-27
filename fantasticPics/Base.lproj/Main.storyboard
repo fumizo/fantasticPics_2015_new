@@ -37,7 +37,6 @@
         <!--Navigation Controller-->
         <scene sceneID="A05-0e-l0d">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wiL-1o-CnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="L7A-wK-fdY" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vM3-m3-qU1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -49,6 +48,7 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="cxG-Be-U1l"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiL-1o-CnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-222" y="169"/>
         </scene>
@@ -177,55 +177,54 @@
             <point key="canvasLocation" x="516" y="243"/>
         </scene>
         <!--Done View Controller-->
-        <scene sceneID="6vn-vd-dAU">
+        <scene sceneID="3eS-B6-OME">
             <objects>
-                <viewController storyboardIdentifier="DoneViewController" id="DBb-ea-k0D" customClass="DoneViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lg2-bx-G7e">
+                <viewController storyboardIdentifier="DoneViewController" id="WSD-KZ-rpA" customClass="DoneViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fd6-LH-Drc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="a5z-Qj-XdR">
+                                <rect key="frame" x="214" y="390" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="fantasticPics_twitter.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitter" destination="WSD-KZ-rpA" eventType="touchUpInside" id="GKu-Iq-iyc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SAm-Cp-GI8">
+                                <rect key="frame" x="123" y="396" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="fantasticPics_instagram.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="instagram" destination="WSD-KZ-rpA" eventType="touchUpInside" id="MXP-1y-zpc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="kmM-Pd-z1p">
+                                <rect key="frame" x="0.0" y="44" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pZO-OZ-eRv">
-                                <rect key="frame" x="144" y="465" width="34" height="30"/>
+                                <rect key="frame" x="53" y="419" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="backStart" destination="DBb-ea-k0D" eventType="touchUpInside" id="Ihx-gT-xa7"/>
+                                    <action selector="backStart" destination="WSD-KZ-rpA" eventType="touchUpInside" id="ckW-Du-Ro5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="a5z-Qj-XdR">
-                                <rect key="frame" x="231" y="427" width="43" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="twitter">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="twitter" destination="DBb-ea-k0D" eventType="touchUpInside" id="EJn-kk-71I"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SAm-Cp-GI8">
-                                <rect key="frame" x="218" y="465" width="68" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="instagram">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="instagram" destination="DBb-ea-k0D" eventType="touchUpInside" id="0oz-zI-Xv4"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="kmM-Pd-z1p">
-                                <rect key="frame" x="0.0" y="65" width="320" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0MG-NB-0lj"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FPg-sn-afi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="moV-3b-xO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872" y="243"/>
+            <point key="canvasLocation" x="883" y="243"/>
         </scene>
     </scenes>
     <resources>
@@ -234,9 +233,11 @@
         <image name="fantasticPics_camera.png" width="151" height="150"/>
         <image name="fantasticPics_clear.png" width="110" height="110"/>
         <image name="fantasticPics_collection.png" width="151" height="150"/>
+        <image name="fantasticPics_instagram.png" width="257" height="257"/>
         <image name="fantasticPics_refilter.png" width="110" height="110"/>
         <image name="fantasticPics_save.png" width="110" height="110"/>
         <image name="fantasticPics_startButton.png" width="266" height="266"/>
+        <image name="fantasticPics_twitter.png" width="256" height="256"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
