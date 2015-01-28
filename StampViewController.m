@@ -266,7 +266,7 @@
     //Close button view which is in top left corner
     closeVw = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 25, 25)];
     closeVw.backgroundColor = [UIColor clearColor];
-    closeVw.image = [UIImage imageNamed:@"close_gold.png" ];
+    closeVw.image = [UIImage imageNamed:@"fantasticPics_close.png" ];
     closeVw.userInteractionEnabled = YES;
     UITapGestureRecognizer * singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTap:)];
     [closeVw addGestureRecognizer:singleTap];
@@ -277,7 +277,7 @@
     resizeVw = [[UIImageView alloc]initWithFrame:CGRectMake(stampView.frame.size.width-25, stampView.frame.size.height-25, 25, 25)];
     resizeVw.backgroundColor = [UIColor clearColor];
     resizeVw.userInteractionEnabled = YES;
-    resizeVw.image = [UIImage imageNamed:@"button_02.png" ];
+    resizeVw.image = [UIImage imageNamed:@"fantasticPics_resize.png" ];
     
     [stampView addSubview:resizeVw];
     UIPanGestureRecognizer* panResizeGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(resizeTranslate:)];
@@ -286,7 +286,7 @@
     //Rotating view which is in bottom left corner
     rotateVw = [[UIImageView alloc]initWithFrame:CGRectMake(0, stampView.frame.size.height-25, 25, 25)];
     rotateVw.backgroundColor = [UIColor clearColor];
-    rotateVw.image = [UIImage imageNamed:@"button_01.png" ];
+    rotateVw.image = [UIImage imageNamed:@"fantasticPics_kaiten.png" ];
     rotateVw.userInteractionEnabled = YES;
     [stampView addSubview:rotateVw];
     
