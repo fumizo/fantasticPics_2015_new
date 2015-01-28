@@ -55,11 +55,15 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fantasticPics_backG.png" id="xKb-ob-UIM">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IZ1-n8-2cg">
                                 <rect key="frame" x="85" y="127" width="151" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,10 +89,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fantasticPics_backG.png" id="xKb-ob-UIM">
-                                <rect key="frame" x="0.0" y="0.0" width="500" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -106,7 +106,7 @@
         <!--Stamp View Controller-->
         <scene sceneID="3tW-ND-i7s">
             <objects>
-                <viewController storyboardIdentifier="StampViewController" id="c3H-Zx-qAH" customClass="StampViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="stamp" id="c3H-Zx-qAH" customClass="StampViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UOg-c9-xWJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,11 +161,13 @@
                                 </state>
                                 <connections>
                                     <action selector="done" destination="c3H-Zx-qAH" eventType="touchUpInside" id="PFC-g7-b8d"/>
+                                    <segue destination="WSD-KZ-rpA" kind="modal" id="TPZ-Iz-LXi"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="photoView" destination="L3o-FI-Fxr" id="Znl-5M-Yqg"/>
@@ -174,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SnA-HY-Ww9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="243"/>
+            <point key="canvasLocation" x="513" y="223"/>
         </scene>
         <!--Done View Controller-->
         <scene sceneID="3eS-B6-OME">
@@ -184,16 +186,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="a5z-Qj-XdR">
-                                <rect key="frame" x="214" y="390" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="fantasticPics_twitter.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="twitter" destination="WSD-KZ-rpA" eventType="touchUpInside" id="GKu-Iq-iyc"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SAm-Cp-GI8">
                                 <rect key="frame" x="123" y="396" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -204,10 +196,6 @@
                                     <action selector="instagram" destination="WSD-KZ-rpA" eventType="touchUpInside" id="MXP-1y-zpc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="kmM-Pd-z1p">
-                                <rect key="frame" x="0.0" y="44" width="320" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pZO-OZ-eRv">
                                 <rect key="frame" x="53" y="419" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -216,6 +204,20 @@
                                 </state>
                                 <connections>
                                     <action selector="backStart" destination="WSD-KZ-rpA" eventType="touchUpInside" id="ckW-Du-Ro5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="kmM-Pd-z1p">
+                                <rect key="frame" x="0.0" y="44" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="a5z-Qj-XdR">
+                                <rect key="frame" x="214" y="396" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="fantasticPics_twitter.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitter" destination="WSD-KZ-rpA" eventType="touchUpInside" id="GKu-Iq-iyc"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -168,6 +168,7 @@
         //        [stampImgView setTag: index-1]; //今のスタンプにタグをつける。indexと同じ番号
         stampImgView.backgroundColor = [UIColor clearColor];
         stampView =  [[UIView alloc] initWithFrame:CGRectMake(0,0,stampImgView.frame.size.width,stampImgView.frame.size.height)];
+//        [stampView addGestureRecognizer:pan];ここどうよ
 
         [stampView addSubview:stampImgView];
         index = 0;  //一回スタンプしたらindexを0にして、押せなくするのよ
@@ -501,7 +502,9 @@
     }
 }
 
+
 //アラートのokしたら画面遷移
+/*
 // アラートのボタンが押された時に呼ばれるデリゲート例文
 -(void)alertView:(UIAlertView*)alertView
 clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -520,6 +523,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     }
     
 }
+ */
 
 //ドラッグジェスチャー
 -(void)panAction:(UIPanGestureRecognizer *)sender{
