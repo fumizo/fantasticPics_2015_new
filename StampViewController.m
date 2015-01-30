@@ -21,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    num = 0;
+
     // Do any additional setup after loading the view.
     
     //    // UIPinchGestureRecognizerを登録
@@ -85,9 +87,11 @@
 //    UIPanGestureRecognizer *pan;
     pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
 //    (void)[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
+    stampView.userInteractionEnabled = YES;  //タッチを検出
     [stampView addGestureRecognizer:pan];
     
 }
+
 
 /*
  //UIGestureRecognizerについて
@@ -140,27 +144,6 @@
     //    指一本だけ情報を所得
     CGPoint location = [touch locationInView:self.view];
     
-    /*さわったところにお花できるやつ
-     UIImage *makingRing = [UIImage imageNamed:@"fantasticPics_ring"];
-     making = [[UIImageView alloc]initWithImage:makingRing];
-     
-     //    making.center = CGPointMake(location.x, location.y);
-     CGRect rect = CGRectMake(location.x -25, location.y-25, 50, 50);
-     making.frame = rect;
-     [self.view addSubview:making];
-     
-     [UIView animateWithDuration:1.1f // アニメーション速度2.5秒
-     delay:0.0f // 1秒後にアニメーション
-     options:UIViewAnimationOptionCurveEaseInOut
-     animations:^{
-     // 画像を2倍に拡大
-     making.transform = CGAffineTransformMakeScale(1.7,  1.7);
-     making.alpha = 0;
-     } completion:^(BOOL finished) {
-     // アニメーション終了時
-     }];
-     */
-    
     //   その位置を所得
     if(index > 0){
         //In visible background view
@@ -182,17 +165,21 @@
         viewList[count] = stampImgView;
         count = count +1;
         
+        
+        //画像の上以外にスタンプを押させない
+        if (location.y +  stampImgView.frame.size.height/2>= 348){
+        }else if (location.y - stampImgView.frame.size.height/2<= 28){
+        }else{
+            [self.view addSubview:stampView]; //画像に表示する
+//            num = num +1; //１回スタンプを追加したらnumを１にする、１だったら四隅けしてnumを０に
+        }
         /*
-         // UIPinchGestureRecognizerを登録
-         UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchAction:)];
-         pinch.delegate = self;
-         [stampView addGestureRecognizer:pinch];
+        if (num == 2) {
+            [self removeResizeButtons];
+            num = 0;
+        }
          */
-        [self.view addSubview:stampView]; //画像に表示する
     }
-    //    // UIPinchGestureRecognizerを登録
-    //    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchAction:)];
-    //    [self.view addGestureRecognizer:pinch];
     
 }
 
@@ -332,14 +319,21 @@
 }
 
 -(IBAction)clearStamp{
-    
-    [self removeResizeButtons];
+    /*
+    for (UIView *view in [_view subviews]) {
+        //わわわ
+        [view removeFromSuperview];
+    }
+     for (stampView in [_photoView subviews]) {
+     [stampView removeFromSuperview];
+     }
 
+    */
     for(int i = count; i !=0; i= i-1){
         [viewList[i-1] removeFromSuperview];
-        
         viewList[count] = Nil;
     }
+    [self removeResizeButtons];
 }
 
 

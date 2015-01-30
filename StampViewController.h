@@ -46,7 +46,8 @@
     //ドラッグジェスチャー
     UIPanGestureRecognizer *pan;
 
-    
+    //一度スタンプを選択して連続で押すときに１回ずつ[self removeResizeButtons];呼びたいっていう変数
+    int num;
 
 //    BOOL isReSize;//四隅のやつがいらなくなったらnoにいるときはonに
     
