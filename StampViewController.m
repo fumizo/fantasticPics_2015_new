@@ -152,6 +152,7 @@
         //        [stampImgView setTag: index-1]; //今のスタンプにタグをつける。indexと同じ番号
         stampImgView.backgroundColor = [UIColor clearColor];
         stampView =  [[UIView alloc] initWithFrame:CGRectMake(0,0,stampImgView.frame.size.width,stampImgView.frame.size.height)];
+        
 //        [stampView addGestureRecognizer:pan];ここどうよ
 
         [stampView addSubview:stampImgView];
