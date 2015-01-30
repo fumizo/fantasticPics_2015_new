@@ -35,13 +35,14 @@
     stampArray[3] = @"MUSEE.logo_sozai";     //ミュゼロゴ
     stampArray[4] = @"highBall_miho_sozai";  //うちのハイボールは角だから
     stampArray[5] = @"highBall_haikara_sozai";  //お好きでしょハイから
+    stampArray[6] = @"fantasticPics_aoni.logo.png";  //青二ロゴ
     
     //    スクロールビューの初期化
     stampScrool.frame = self.view.bounds;
     //    スクロールしたときに反動させるかどうか
     stampScrool.bounces=YES;
     //    サイズを設定する
-    CGRect rect = CGRectMake(0, 568-128, 320, 128);
+    CGRect rect = CGRectMake(0, 568-128, 320, 128+20);
     //　　UIImageViewを生成
     UIImageView *imageView =[[UIImageView alloc]initWithFrame:rect];
     

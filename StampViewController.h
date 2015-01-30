@@ -15,7 +15,7 @@
 #import "DoneViewController.h"
 @interface StampViewController : UIViewController<DBCameraViewControllerDelegate , UIGestureRecognizerDelegate>{
     
-    NSString *stampArray[6];
+    NSString *stampArray[7];
     int index;
     UIImageView *viewList[100];
     int count;
