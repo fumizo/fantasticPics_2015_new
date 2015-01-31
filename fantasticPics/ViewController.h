@@ -32,5 +32,7 @@
 
 -(IBAction)openingCamera ;
 
+-(IBAction)goEx;
+
 @end
 

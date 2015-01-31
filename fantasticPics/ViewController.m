@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "StampViewController.h"
+#import "ExViewController.h"
 
 @interface ViewController ()
 
@@ -74,7 +75,11 @@
      */
 }
 
-
+-(void)goEx{
+    ExViewController *secondVC =  [self.storyboard instantiateViewControllerWithIdentifier:@"ExViewController"];
+    [self presentViewController:secondVC animated:YES completion:nil];//YESならModal,Noなら何もなし
+   
+}
 
 - (void) openCamera{
     DBCameraContainerViewController *cameraContainer = [[DBCameraContainerViewController alloc] initWithDelegate:self];

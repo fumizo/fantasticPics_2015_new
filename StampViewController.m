@@ -8,8 +8,10 @@
 
 #import "StampViewController.h"
 #import "DoneViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import <CoreGraphics/CoreGraphics.h>
 
-@interface StampViewController ()
+@interface StampViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @end
 
@@ -95,6 +97,11 @@
     stampView.userInteractionEnabled = YES;  //タッチを検出
     
 }
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
 
 
 /*
@@ -199,11 +206,6 @@
  }
  */
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -336,6 +338,7 @@
      }
 
     */
+    
     for(int i = count; i !=0; i= i-1){
         [viewList[i-1] removeFromSuperview];
         viewList[count] = Nil;
@@ -444,6 +447,33 @@
 }
 
 -(void)capture{
+    
+// 画質調整ポイント①
+    CGRect rect = CGRectMake(0, 0, self.photoView.frame.size.width, self.photoView.frame.size.height);
+    //CGRect rect = CGRectMake(0, 0, imageView.image.size.width, imageView.image.size.height);
+    
+    // This Option(last value) is very important for Quority of Photo
+// 画質調整ポイント②
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0.0);
+    
+    // Decide layer to save
+    [self.photoView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    // Get PNG Image Data
+// 画質調整ポイント③
+    NSData *pngData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+    //UIImage *jpgImage = UIGraphicsGetImageFromCurrentImageContext();
+    //NSData *jpgData = UIImageJPEGRepresentation(jpgImage, 1.0);
+    UIImage *captureImage = [UIImage imageWithData:pngData];
+    
+    // End Context
+    UIGraphicsEndImageContext();
+    
+    UIImageWriteToSavedPhotosAlbum(captureImage, nil, nil, nil);
+    UIGraphicsEndImageContext();
+    
+
+    /*
     //    キャプチャする範囲の指定
     //    CGRect rect = CGRectMake(0, 70, 320, 320);
     
@@ -466,16 +496,54 @@
     NSData *data = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
     capture = [UIImage imageWithData:data];
     UIGraphicsEndImageContext();
+     */
 }
-
--(IBAction)done{
-    [self removeResizeButtons]; //四隅のやつがついたまま保存しないようにする
-    [self capture];
-    UIImageWriteToSavedPhotosAlbum(capture, self, @selector(savingImageIsFinished:didFinishSavingWithError:contextInfo:), nil);
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    //imageView.image = [info objectForKey:UIImagePickerControllerEditedImage];
+//#warning 画質調整ポイント④
+    self.photoView.image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    [picker dismissViewControllerAnimated:YES completion:nil];
     
 }
 
 
+-(IBAction)done{
+    [self removeResizeButtons]; //四隅のやつがついたまま保存しないようにする
+
+    // 画質調整ポイント①
+    CGRect rect = CGRectMake(0, 0, self.photoView.frame.size.width, self.photoView.frame.size.height);
+    //CGRect rect = CGRectMake(0, 0, imageView.image.size.width, imageView.image.size.height);
+    
+    // This Option(last value) is very important for Quority of Photo
+    // 画質調整ポイント②
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0.0);
+    
+    // Decide layer to save
+    [self.photoView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    // Get PNG Image Data
+    // 画質調整ポイント③
+    NSData *pngData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+    //UIImage *jpgImage = UIGraphicsGetImageFromCurrentImageContext();
+    //NSData *jpgData = UIImageJPEGRepresentation(jpgImage, 1.0);
+    UIImage *captureImage = [UIImage imageWithData:pngData];
+    
+    // End Context
+    UIGraphicsEndImageContext();
+    
+    UIImageWriteToSavedPhotosAlbum(captureImage, nil, nil, nil);
+    UIGraphicsEndImageContext();
+    
+    // Alert
+    if (captureImage) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"保存完了" message:@"保存に成功しました" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+    
+}
+
+
+/*
 // 完了を知らせる
 - (void) savingImageIsFinished:(UIImage *)_image didFinishSavingWithError:(NSError *)_error contextInfo:(void *)_contextInfo
 {
@@ -504,6 +572,7 @@
         [alert show];
     }
 }
+ */
 
 
 //アラートのokしたら画面遷移
@@ -544,7 +613,6 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     if(sender.state == UIGestureRecognizerStateEnded){
         NSLog(@"移動終了");
     }
-
 }
 
 /*
