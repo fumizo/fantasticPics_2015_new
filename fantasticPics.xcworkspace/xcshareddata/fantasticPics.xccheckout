@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2627C710-6BAC-479B-82B0-A6D5BEACEC7E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>fantasticPics</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6CFD308374DE5F6B17F93493C807BDB5469464A2</key>
+		<string>https://github.com/masuhara/fantasticPics_2015_new.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>fantasticPics.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6CFD308374DE5F6B17F93493C807BDB5469464A2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/masuhara/fantasticPics_2015_new.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6CFD308374DE5F6B17F93493C807BDB5469464A2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6CFD308374DE5F6B17F93493C807BDB5469464A2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fantasticPics_2015_new</string>
+		</dict>
+	</array>
+</dict>
+</plist>
