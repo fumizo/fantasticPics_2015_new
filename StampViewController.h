@@ -51,6 +51,8 @@
 
 //    BOOL isReSize;//四隅のやつがいらなくなったらnoにいるときはonに
     
+    NSData *pngData;
+    
 }
 
 -(void)stamp1;

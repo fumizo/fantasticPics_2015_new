@@ -503,6 +503,7 @@
     UIGraphicsEndImageContext();
      */
 }
+
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     //imageView.image = [info objectForKey:UIImagePickerControllerEditedImage];
 //#warning 画質調整ポイント④
@@ -528,7 +529,7 @@
     
     // Get PNG Image Data
     // 画質調整ポイント③
-    NSData *pngData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+    pngData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
     //UIImage *jpgImage = UIGraphicsGetImageFromCurrentImageContext();
     //NSData *jpgData = UIImageJPEGRepresentation(jpgImage, 1.0);
     UIImage *captureImage = [UIImage imageWithData:pngData];
@@ -547,37 +548,11 @@
     
 }
 
-
-/*
-// 完了を知らせる
-- (void) savingImageIsFinished:(UIImage *)_image didFinishSavingWithError:(NSError *)_error contextInfo:(void *)_contextInfo
-{
-    NSLog(@"ここでインジケータでもだそうか！");
-    
-    UIAlertView *alert;
-    
-    if(_error){//エラーのとき
-        alert = [[UIAlertView alloc] initWithTitle:@""
-                                                        message:@"画像の保存に失敗しました。"
-                                                       delegate:nil
-                                              cancelButtonTitle:nil
-                                              otherButtonTitles:@"OK", nil
-                              ];
-        
-        [alert show];
-//        [alert release];
-        
-    }else{//保存できたとき
-        alert = [[UIAlertView alloc] initWithTitle:@""
-                                                        message:@"画像の保存に成功しました。"
-                                                       delegate:nil
-                                              cancelButtonTitle:nil
-                                              otherButtonTitles:@"OK", nil
-                              ];
-        [alert show];
-    }
+//nsdataを受け渡す
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    DoneViewController *doneVC = segue.destinationViewController;
+    doneVC.imageDate = pngData;
 }
- */
 
 
 //アラートのokしたら画面遷移

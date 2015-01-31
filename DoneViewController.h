@@ -10,12 +10,19 @@
 #import <Social/Social.h>
 
 
-@interface DoneViewController : ViewController
+@interface DoneViewController : ViewController{
+    NSData * imageData;
+    IBOutlet UIImageView * doneImage;
+}
 
 -(IBAction)twitter;
 -(IBAction)instagram;
 -(IBAction)backStart;
 -(IBAction)top;
+
+
+//@property (nonatomic, readonly) NSData *imageDate;
+@property (nonatomic) NSData *imageDate;
 
 
 @end
