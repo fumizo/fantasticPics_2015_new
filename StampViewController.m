@@ -182,7 +182,12 @@
         if (location.y +  stampImgView.frame.size.height/2>= 348){
         }else if (location.y - stampImgView.frame.size.height/2<= 28){
         }else{
+//<<<<<<< HEAD
 //            [self.view addSubview:stampView]; //画像に表示する
+//=======
+#warning ここ
+            [self.photoView addSubview:stampView]; //画像に表示する
+//>>>>>>> 45750bfebaa321147850f494ad0b819018712b25
 //            num = num +1; //１回スタンプを追加したらnumを１にする、１だったら四隅けしてnumを０に
         }
         /*

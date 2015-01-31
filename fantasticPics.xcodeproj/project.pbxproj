@@ -38,8 +38,6 @@
 		4F2C92951A4BF4B200034887 /* UT_990yen_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92891A4BF4B200034887 /* UT_990yen_sozai.png */; };
 		4F2C92961A4BF4B200034887 /* UT_logo_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C928A1A4BF4B200034887 /* UT_logo_sozai.png */; };
 		4F8F70121A459ABE002AAC95 /* StampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F70111A459ABE002AAC95 /* StampViewController.m */; };
-		4FB72BD41A77DE5A00115361 /* fantasticPics_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BD31A77DE5A00115361 /* fantasticPics_twitter.png */; };
-		4FB72BD61A77DE6900115361 /* fantasticPics_instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BD51A77DE6900115361 /* fantasticPics_instagram.png */; };
 		4FB72BD81A79328700115361 /* fantasticPics_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BD71A79328700115361 /* fantasticPics_close.png */; };
 		4FB72BDA1A79329F00115361 /* fantasticPics_kaiten.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BD91A79329F00115361 /* fantasticPics_kaiten.png */; };
 		4FB72BDC1A7932AC00115361 /* fantasticPics_resize.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BDB1A7932AC00115361 /* fantasticPics_resize.png */; };
@@ -65,6 +63,9 @@
 		4FC662BB1A70F8C400CCFF97 /* DoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC662BA1A70F8C400CCFF97 /* DoneViewController.m */; };
 		4FC662BD1A7101FD00CCFF97 /* fantasticPics_done.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC662BC1A7101FD00CCFF97 /* fantasticPics_done.png */; };
 		4FC662C11A7369C400CCFF97 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC662C01A7369C400CCFF97 /* Social.framework */; };
+		AF92B4041A7D39D200AEBBB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF92B4011A7D39D200AEBBB3 /* Default-568h@2x.png */; };
+		AF92B4051A7D39D200AEBBB3 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF92B4021A7D39D200AEBBB3 /* Default-667h@2x.png */; };
+		AF92B4061A7D39D200AEBBB3 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF92B4031A7D39D200AEBBB3 /* Default-736h@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,8 +120,6 @@
 		4F2C928A1A4BF4B200034887 /* UT_logo_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UT_logo_sozai.png; sourceTree = "<group>"; };
 		4F8F70101A459ABE002AAC95 /* StampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StampViewController.h; path = ../StampViewController.h; sourceTree = "<group>"; };
 		4F8F70111A459ABE002AAC95 /* StampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StampViewController.m; path = ../StampViewController.m; sourceTree = "<group>"; };
-		4FB72BD31A77DE5A00115361 /* fantasticPics_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_twitter.png; path = ../../fantasticPics_Image/fantasticPics_twitter.png; sourceTree = "<group>"; };
-		4FB72BD51A77DE6900115361 /* fantasticPics_instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_instagram.png; path = ../../fantasticPics_Image/fantasticPics_instagram.png; sourceTree = "<group>"; };
 		4FB72BD71A79328700115361 /* fantasticPics_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_close.png; path = ../fantasticPics_close.png; sourceTree = "<group>"; };
 		4FB72BD91A79329F00115361 /* fantasticPics_kaiten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_kaiten.png; path = ../fantasticPics_kaiten.png; sourceTree = "<group>"; };
 		4FB72BDB1A7932AC00115361 /* fantasticPics_resize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_resize.png; path = ../fantasticPics_resize.png; sourceTree = "<group>"; };
@@ -148,6 +147,9 @@
 		4FC662BA1A70F8C400CCFF97 /* DoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoneViewController.m; path = ../DoneViewController.m; sourceTree = "<group>"; };
 		4FC662BC1A7101FD00CCFF97 /* fantasticPics_done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_done.png; path = ../fantasticPics_done.png; sourceTree = "<group>"; };
 		4FC662C01A7369C400CCFF97 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		AF92B4011A7D39D200AEBBB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AF92B4021A7D39D200AEBBB3 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		AF92B4031A7D39D200AEBBB3 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		C303F74F678D169E28779ECB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D8063E9712DF391DC90CF6FD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,6 +253,7 @@
 		4F0A32981A35EEF600147905 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF92B4001A7D39D200AEBBB3 /* Defaults */,
 				4F0A32991A35EEF600147905 /* Info.plist */,
 				4F0A329A1A35EEF600147905 /* main.m */,
 			);
@@ -326,8 +329,6 @@
 				4FB72BDB1A7932AC00115361 /* fantasticPics_resize.png */,
 				4FB72BD91A79329F00115361 /* fantasticPics_kaiten.png */,
 				4FB72BD71A79328700115361 /* fantasticPics_close.png */,
-				4FB72BD51A77DE6900115361 /* fantasticPics_instagram.png */,
-				4FB72BD31A77DE5A00115361 /* fantasticPics_twitter.png */,
 				4FC662BC1A7101FD00CCFF97 /* fantasticPics_done.png */,
 				4FC662A31A70ED0100CCFF97 /* fantasticPics_back.png */,
 				4FC662A41A70ED0100CCFF97 /* fantasticPics_backG.png */,
@@ -352,6 +353,16 @@
 				0119756071205E1AC6AC1F20 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF92B4001A7D39D200AEBBB3 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				AF92B4011A7D39D200AEBBB3 /* Default-568h@2x.png */,
+				AF92B4021A7D39D200AEBBB3 /* Default-667h@2x.png */,
+				AF92B4031A7D39D200AEBBB3 /* Default-736h@3x.png */,
+			);
+			path = Defaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,11 +450,13 @@
 			files = (
 				4F2C92921A4BF4B200034887 /* simamura_logo_sozai.png in Resources */,
 				4FC662B71A70ED0100CCFF97 /* fantasticPics_startButton.png in Resources */,
-				4FB72BD41A77DE5A00115361 /* fantasticPics_twitter.png in Resources */,
 				4F2C92951A4BF4B200034887 /* UT_990yen_sozai.png in Resources */,
+				AF92B4041A7D39D200AEBBB3 /* Default-568h@2x.png in Resources */,
 				4F2C92961A4BF4B200034887 /* UT_logo_sozai.png in Resources */,
+				AF92B4061A7D39D200AEBBB3 /* Default-736h@3x.png in Resources */,
 				4FB72BDA1A79329F00115361 /* fantasticPics_kaiten.png in Resources */,
 				4FB72BE21A7CD1E800115361 /* fantasticPics_collection.png in Resources */,
+				AF92B4051A7D39D200AEBBB3 /* Default-667h@2x.png in Resources */,
 				4FC662B51A70ED0100CCFF97 /* fantasticPics_ring.png in Resources */,
 				4FB72BDC1A7932AC00115361 /* fantasticPics_resize.png in Resources */,
 				4F0A32A41A35EEF600147905 /* Main.storyboard in Resources */,
@@ -472,7 +485,6 @@
 				4FB72BEE1A7D1A1600115361 /* ex3.png in Resources */,
 				4FB72BF11A7D1A1600115361 /* ex6.png in Resources */,
 				4FB72BF01A7D1A1600115361 /* ex5.png in Resources */,
-				4FB72BD61A77DE6900115361 /* fantasticPics_instagram.png in Resources */,
 				4F2C928C1A4BF4B200034887 /* highBall_haikara_sozai.png in Resources */,
 				4FB72BE41A7CD23400115361 /* fantasticPics_camera.png in Resources */,
 			);
