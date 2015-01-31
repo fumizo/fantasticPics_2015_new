@@ -59,6 +59,7 @@
 -(void)stamp4;
 -(void)stamp5;
 -(void)stamp6;
+-(void)stamp7;
 
 - (IBAction)backStamp;
 - (IBAction)clearStamp;

@@ -54,8 +54,10 @@
     //    imageView.image =[UIImage imageNamed:@"gurade.png"];
     
     //    UIScrollViewのコンテンツサイズを画像のサイズに合わせる
-    stampScrool.contentSize = imageView.bounds.size;
-    
+    rect.size.width = 1200;
+//    stampScrool.contentSize = imageView.bounds.size;
+    stampScrool.contentSize = rect.size;
+    //scrollviewについて　http://oropon.hatenablog.com/entry/20111116/p1
     
     //    UIScrollViewのインスタンスに画像を貼付ける
     [stampScrool addSubview:imageView];
@@ -63,7 +65,7 @@
     
     
     //    for文を使ってボタンの位置をずらす
-    for (int i=0;  i<6; i++) {
+    for (int i=0;  i<7; i++) {
         //        ボタンの種類を設定
         UIButton *tapbtn =[UIButton buttonWithType:UIButtonTypeCustom];
         
@@ -81,14 +83,16 @@
         tapbtn.tag=i;
         
         [stampScrool addSubview:tapbtn];
+        
+        
+        //ドラッグジェスチャーを登録
+        //    UIPanGestureRecognizer *pan;
+        pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
+        //    (void)[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
+        [tapbtn addGestureRecognizer:pan];
     }
     
-    //ドラッグジェスチャーを登録
-//    UIPanGestureRecognizer *pan;
-    pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
-//    (void)[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
     stampView.userInteractionEnabled = YES;  //タッチを検出
-    [stampView addGestureRecognizer:pan];
     
 }
 
@@ -126,11 +130,11 @@
         case 5:
             [self stamp6];
             break;
+        case 6:
+            [self stamp7];
             
         default:
-            break;
-            //        isReSize = NO ;
-            
+            break;            
     }
     
 }
@@ -304,7 +308,9 @@
 }
 -(void)stamp6{
     index = 6;
-    
+}
+-(void)stamp7{
+    index = 7;
 }
 
 -(IBAction)backStamp{
@@ -444,7 +450,7 @@
     //画像の範囲を取得
     CGRect rect = self.photoView.bounds;
     UIGraphicsBeginImageContextWithOptions(rect.size, self.photoView.opaque, 0.0); //画質を落とさない
-    UIGraphicsBeginImageContext(rect.size);
+//    UIGraphicsBeginImageContext(rect.size);  //これをコメントアウトで画質を落とさなくする
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
     CGContextFillRect(ctx, rect);
@@ -454,6 +460,7 @@
     //    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
     //    UIImage *capture = UIGraphicsGetImageFromCurrentImageContext();
     //    UIImageWriteToSavedPhotosAlbum(capture, nil, nil, nil);
+    
     
     //    pngに変換する
     NSData *data = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
