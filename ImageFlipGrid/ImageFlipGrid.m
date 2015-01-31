@@ -79,7 +79,7 @@
 
 -(void) doFlipAnimation
 {
-    NSLog(@"doFlipAnimation");
+//    NSLog(@"doFlipAnimation");
     
     float delayDelta = 0.12f;
     float rowDelay = 0.06f;

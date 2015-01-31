@@ -44,7 +44,10 @@
 
 -(IBAction)backStart{
     [self dismissViewControllerAnimated:YES completion:nil];
+}
 
+-(IBAction)top{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)twitter{

@@ -15,6 +15,7 @@
 -(IBAction)twitter;
 -(IBAction)instagram;
 -(IBAction)backStart;
+-(IBAction)top;
 
 
 @end
