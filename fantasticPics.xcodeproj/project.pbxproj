@@ -38,8 +38,6 @@
 		4F2C92951A4BF4B200034887 /* UT_990yen_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92891A4BF4B200034887 /* UT_990yen_sozai.png */; };
 		4F2C92961A4BF4B200034887 /* UT_logo_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C928A1A4BF4B200034887 /* UT_logo_sozai.png */; };
 		4F8F70121A459ABE002AAC95 /* StampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F70111A459ABE002AAC95 /* StampViewController.m */; };
-		4FB72BD41A77DE5A00115361 /* fantasticPics_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BD31A77DE5A00115361 /* fantasticPics_twitter.png */; };
-		4FB72BD61A77DE6900115361 /* fantasticPics_instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BD51A77DE6900115361 /* fantasticPics_instagram.png */; };
 		4FB72BD81A79328700115361 /* fantasticPics_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BD71A79328700115361 /* fantasticPics_close.png */; };
 		4FB72BDA1A79329F00115361 /* fantasticPics_kaiten.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BD91A79329F00115361 /* fantasticPics_kaiten.png */; };
 		4FB72BDC1A7932AC00115361 /* fantasticPics_resize.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BDB1A7932AC00115361 /* fantasticPics_resize.png */; };
@@ -119,8 +117,6 @@
 		4F2C928A1A4BF4B200034887 /* UT_logo_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UT_logo_sozai.png; sourceTree = "<group>"; };
 		4F8F70101A459ABE002AAC95 /* StampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StampViewController.h; path = ../StampViewController.h; sourceTree = "<group>"; };
 		4F8F70111A459ABE002AAC95 /* StampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StampViewController.m; path = ../StampViewController.m; sourceTree = "<group>"; };
-		4FB72BD31A77DE5A00115361 /* fantasticPics_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_twitter.png; path = ../../fantasticPics_Image/fantasticPics_twitter.png; sourceTree = "<group>"; };
-		4FB72BD51A77DE6900115361 /* fantasticPics_instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_instagram.png; path = ../../fantasticPics_Image/fantasticPics_instagram.png; sourceTree = "<group>"; };
 		4FB72BD71A79328700115361 /* fantasticPics_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_close.png; path = ../fantasticPics_close.png; sourceTree = "<group>"; };
 		4FB72BD91A79329F00115361 /* fantasticPics_kaiten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_kaiten.png; path = ../fantasticPics_kaiten.png; sourceTree = "<group>"; };
 		4FB72BDB1A7932AC00115361 /* fantasticPics_resize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_resize.png; path = ../fantasticPics_resize.png; sourceTree = "<group>"; };
@@ -326,8 +322,6 @@
 				4FB72BDB1A7932AC00115361 /* fantasticPics_resize.png */,
 				4FB72BD91A79329F00115361 /* fantasticPics_kaiten.png */,
 				4FB72BD71A79328700115361 /* fantasticPics_close.png */,
-				4FB72BD51A77DE6900115361 /* fantasticPics_instagram.png */,
-				4FB72BD31A77DE5A00115361 /* fantasticPics_twitter.png */,
 				4FC662BC1A7101FD00CCFF97 /* fantasticPics_done.png */,
 				4FC662A31A70ED0100CCFF97 /* fantasticPics_back.png */,
 				4FC662A41A70ED0100CCFF97 /* fantasticPics_backG.png */,
@@ -439,7 +433,6 @@
 			files = (
 				4F2C92921A4BF4B200034887 /* simamura_logo_sozai.png in Resources */,
 				4FC662B71A70ED0100CCFF97 /* fantasticPics_startButton.png in Resources */,
-				4FB72BD41A77DE5A00115361 /* fantasticPics_twitter.png in Resources */,
 				4F2C92951A4BF4B200034887 /* UT_990yen_sozai.png in Resources */,
 				4F2C92961A4BF4B200034887 /* UT_logo_sozai.png in Resources */,
 				4FB72BDA1A79329F00115361 /* fantasticPics_kaiten.png in Resources */,
@@ -472,7 +465,6 @@
 				4FB72BEE1A7D1A1600115361 /* ex3.png in Resources */,
 				4FB72BF11A7D1A1600115361 /* ex6.png in Resources */,
 				4FB72BF01A7D1A1600115361 /* ex5.png in Resources */,
-				4FB72BD61A77DE6900115361 /* fantasticPics_instagram.png in Resources */,
 				4F2C928C1A4BF4B200034887 /* highBall_haikara_sozai.png in Resources */,
 				4FB72BE41A7CD23400115361 /* fantasticPics_camera.png in Resources */,
 			);
