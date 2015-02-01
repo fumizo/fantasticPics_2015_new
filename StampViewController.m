@@ -27,11 +27,6 @@
 
     // Do any additional setup after loading the view.
     
-    //    // UIPinchGestureRecognizerを登録
-    //    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchAction:)];
-    //    [stampView addGestureRecognizer:pinch];
-    
-    
     index = 0;
     stampArray[0] = @"doragenai";  //セカオワ
     stampArray[1] = @"simamura_logo_sozai";  //しまむらロゴ
@@ -53,9 +48,7 @@
     stampScrool.frame = rect;
     
     //    //    スクロールビューに背景画像を設定
-    //    imageView.image =[UIImage imageNamed:@"gurade.png"];
-    
-    //    UIScrollViewのコンテンツサイズを画像のサイズに合わせる
+        //    UIScrollViewのコンテンツサイズを画像のサイズに合わせる
     rect.size.width = 800;
 //    stampScrool.contentSize = imageView.bounds.size;
     stampScrool.contentSize = rect.size;
@@ -101,16 +94,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-
-
-/*
- //UIGestureRecognizerについて
- //ジェスチャーの同時処理を許可
- - (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
- return YES;
- }
- */
 
 
 //ボタンが押されたときの処理
