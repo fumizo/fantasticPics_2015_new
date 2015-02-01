@@ -26,22 +26,10 @@
 		4F0A32C31A35EF4000147905 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0A32C21A35EF4000147905 /* CoreMedia.framework */; };
 		4F0A32C51A35EF4D00147905 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0A32C41A35EF4D00147905 /* QuartzCore.framework */; };
 		4F0A32C71A35EF5A00147905 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0A32C61A35EF5A00147905 /* MobileCoreServices.framework */; };
-		4F2C928B1A4BF4B200034887 /* highBall_haikara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C927F1A4BF4B200034887 /* highBall_haikara.jpg */; };
-		4F2C928C1A4BF4B200034887 /* highBall_haikara_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92801A4BF4B200034887 /* highBall_haikara_sozai.png */; };
-		4F2C928D1A4BF4B200034887 /* highBall_miho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92811A4BF4B200034887 /* highBall_miho.jpg */; };
-		4F2C928E1A4BF4B200034887 /* highBall_miho_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92821A4BF4B200034887 /* highBall_miho_sozai.png */; };
-		4F2C928F1A4BF4B200034887 /* MUSEE.logo_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92831A4BF4B200034887 /* MUSEE.logo_sozai.png */; };
-		4F2C92901A4BF4B200034887 /* MUSEE_summer_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92841A4BF4B200034887 /* MUSEE_summer_sozai.png */; };
-		4F2C92921A4BF4B200034887 /* simamura_logo_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92861A4BF4B200034887 /* simamura_logo_sozai.png */; };
-		4F2C92931A4BF4B200034887 /* simamura_logo_sozai1024*1024].png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92871A4BF4B200034887 /* simamura_logo_sozai1024*1024].png */; };
-		4F2C92941A4BF4B200034887 /* UT_990yen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92881A4BF4B200034887 /* UT_990yen.jpg */; };
-		4F2C92951A4BF4B200034887 /* UT_990yen_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C92891A4BF4B200034887 /* UT_990yen_sozai.png */; };
-		4F2C92961A4BF4B200034887 /* UT_logo_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C928A1A4BF4B200034887 /* UT_logo_sozai.png */; };
 		4F8F70121A459ABE002AAC95 /* StampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F70111A459ABE002AAC95 /* StampViewController.m */; };
 		4FB72BD81A79328700115361 /* fantasticPics_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BD71A79328700115361 /* fantasticPics_close.png */; };
 		4FB72BDA1A79329F00115361 /* fantasticPics_kaiten.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BD91A79329F00115361 /* fantasticPics_kaiten.png */; };
 		4FB72BDC1A7932AC00115361 /* fantasticPics_resize.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BDB1A7932AC00115361 /* fantasticPics_resize.png */; };
-		4FB72BDE1A7BD0B300115361 /* fantasticPics_aoni.logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BDD1A7BD0B300115361 /* fantasticPics_aoni.logo.png */; };
 		4FB72BE21A7CD1E800115361 /* fantasticPics_collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BE11A7CD1E800115361 /* fantasticPics_collection.png */; };
 		4FB72BE41A7CD23400115361 /* fantasticPics_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BE31A7CD23400115361 /* fantasticPics_camera.png */; };
 		4FB72BEC1A7D1A1600115361 /* ex1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BE61A7D1A1600115361 /* ex1.png */; };
@@ -54,6 +42,14 @@
 		4FB72BF61A7D446E00115361 /* fantasticPics_instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BF51A7D446E00115361 /* fantasticPics_instagram.png */; };
 		4FB72BF81A7D44AA00115361 /* fantasticPics_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BF71A7D44AA00115361 /* fantasticPics_twitter.png */; };
 		4FB72BFA1A7D503F00115361 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BF91A7D503F00115361 /* icon.png */; };
+		4FB72C041A7E7A3800115361 /* doragenai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFC1A7E7A3800115361 /* doragenai.png */; };
+		4FB72C051A7E7A3800115361 /* fantasticPics_aoni.logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFD1A7E7A3800115361 /* fantasticPics_aoni.logo.png */; };
+		4FB72C061A7E7A3800115361 /* MUSEE.logo_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFE1A7E7A3800115361 /* MUSEE.logo_sozai.png */; };
+		4FB72C071A7E7A3800115361 /* MUSEE_summer_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFF1A7E7A3800115361 /* MUSEE_summer_sozai.png */; };
+		4FB72C081A7E7A3800115361 /* simamura_logo_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C001A7E7A3800115361 /* simamura_logo_sozai.png */; };
+		4FB72C091A7E7A3800115361 /* simamura_logo_sozai1024*1024].png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C011A7E7A3800115361 /* simamura_logo_sozai1024*1024].png */; };
+		4FB72C0A1A7E7A3800115361 /* uniqlo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C021A7E7A3800115361 /* uniqlo.png */; };
+		4FB72C0B1A7E7A3800115361 /* uniqlo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C031A7E7A3800115361 /* uniqlo2.png */; };
 		4FC662AE1A70ED0100CCFF97 /* fantasticPics_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC662A31A70ED0100CCFF97 /* fantasticPics_back.png */; };
 		4FC662AF1A70ED0100CCFF97 /* fantasticPics_backG.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC662A41A70ED0100CCFF97 /* fantasticPics_backG.png */; };
 		4FC662B11A70ED0100CCFF97 /* fantasticPics_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC662A61A70ED0100CCFF97 /* fantasticPics_clear.png */; };
@@ -110,23 +106,11 @@
 		4F0A32C21A35EF4000147905 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		4F0A32C41A35EF4D00147905 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4F0A32C61A35EF5A00147905 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		4F2C927F1A4BF4B200034887 /* highBall_haikara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = highBall_haikara.jpg; sourceTree = "<group>"; };
-		4F2C92801A4BF4B200034887 /* highBall_haikara_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highBall_haikara_sozai.png; sourceTree = "<group>"; };
-		4F2C92811A4BF4B200034887 /* highBall_miho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = highBall_miho.jpg; sourceTree = "<group>"; };
-		4F2C92821A4BF4B200034887 /* highBall_miho_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highBall_miho_sozai.png; sourceTree = "<group>"; };
-		4F2C92831A4BF4B200034887 /* MUSEE.logo_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MUSEE.logo_sozai.png; sourceTree = "<group>"; };
-		4F2C92841A4BF4B200034887 /* MUSEE_summer_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MUSEE_summer_sozai.png; sourceTree = "<group>"; };
-		4F2C92861A4BF4B200034887 /* simamura_logo_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simamura_logo_sozai.png; sourceTree = "<group>"; };
-		4F2C92871A4BF4B200034887 /* simamura_logo_sozai1024*1024].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simamura_logo_sozai1024*1024].png"; sourceTree = "<group>"; };
-		4F2C92881A4BF4B200034887 /* UT_990yen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UT_990yen.jpg; sourceTree = "<group>"; };
-		4F2C92891A4BF4B200034887 /* UT_990yen_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UT_990yen_sozai.png; sourceTree = "<group>"; };
-		4F2C928A1A4BF4B200034887 /* UT_logo_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UT_logo_sozai.png; sourceTree = "<group>"; };
 		4F8F70101A459ABE002AAC95 /* StampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StampViewController.h; path = ../StampViewController.h; sourceTree = "<group>"; };
 		4F8F70111A459ABE002AAC95 /* StampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StampViewController.m; path = ../StampViewController.m; sourceTree = "<group>"; };
 		4FB72BD71A79328700115361 /* fantasticPics_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_close.png; path = ../fantasticPics_close.png; sourceTree = "<group>"; };
 		4FB72BD91A79329F00115361 /* fantasticPics_kaiten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_kaiten.png; path = ../fantasticPics_kaiten.png; sourceTree = "<group>"; };
 		4FB72BDB1A7932AC00115361 /* fantasticPics_resize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_resize.png; path = ../fantasticPics_resize.png; sourceTree = "<group>"; };
-		4FB72BDD1A7BD0B300115361 /* fantasticPics_aoni.logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_aoni.logo.png; path = ../fantasticPics_aoni.logo.png; sourceTree = "<group>"; };
 		4FB72BE11A7CD1E800115361 /* fantasticPics_collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_collection.png; path = ../fantasticPics_collection.png; sourceTree = "<group>"; };
 		4FB72BE31A7CD23400115361 /* fantasticPics_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_camera.png; path = ../fantasticPics_camera.png; sourceTree = "<group>"; };
 		4FB72BE61A7D1A1600115361 /* ex1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ex1.png; sourceTree = "<group>"; };
@@ -140,6 +124,14 @@
 		4FB72BF51A7D446E00115361 /* fantasticPics_instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_instagram.png; path = ../fantasticPics_instagram.png; sourceTree = "<group>"; };
 		4FB72BF71A7D44AA00115361 /* fantasticPics_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_twitter.png; path = ../fantasticPics_twitter.png; sourceTree = "<group>"; };
 		4FB72BF91A7D503F00115361 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4FB72BFC1A7E7A3800115361 /* doragenai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doragenai.png; sourceTree = "<group>"; };
+		4FB72BFD1A7E7A3800115361 /* fantasticPics_aoni.logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fantasticPics_aoni.logo.png; sourceTree = "<group>"; };
+		4FB72BFE1A7E7A3800115361 /* MUSEE.logo_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MUSEE.logo_sozai.png; sourceTree = "<group>"; };
+		4FB72BFF1A7E7A3800115361 /* MUSEE_summer_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MUSEE_summer_sozai.png; sourceTree = "<group>"; };
+		4FB72C001A7E7A3800115361 /* simamura_logo_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simamura_logo_sozai.png; sourceTree = "<group>"; };
+		4FB72C011A7E7A3800115361 /* simamura_logo_sozai1024*1024].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simamura_logo_sozai1024*1024].png"; sourceTree = "<group>"; };
+		4FB72C021A7E7A3800115361 /* uniqlo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uniqlo.png; sourceTree = "<group>"; };
+		4FB72C031A7E7A3800115361 /* uniqlo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uniqlo2.png; sourceTree = "<group>"; };
 		4FC662A31A70ED0100CCFF97 /* fantasticPics_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fantasticPics_back.png; sourceTree = "<group>"; };
 		4FC662A41A70ED0100CCFF97 /* fantasticPics_backG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fantasticPics_backG.png; sourceTree = "<group>"; };
 		4FC662A61A70ED0100CCFF97 /* fantasticPics_clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fantasticPics_clear.png; sourceTree = "<group>"; };
@@ -211,11 +203,11 @@
 		4F0A328C1A35EEF600147905 = {
 			isa = PBXGroup;
 			children = (
+				4FB72BFB1A7E7A3700115361 /* sozai */,
 				4FB72BF91A7D503F00115361 /* icon.png */,
 				4FB72BE51A7D1A1600115361 /* fantasticPics_ex */,
 				4FC662A21A70ED0100CCFF97 /* fantasticPics_Image */,
 				4F0322D61A62D25400E0B6D4 /* ImageFlipGrid */,
-				4F2C927E1A4BF4B200034887 /* sozai */,
 				4F0A32971A35EEF600147905 /* fantasticPics */,
 				4F0A32B11A35EEF600147905 /* fantasticPicsTests */,
 				4F0A32961A35EEF600147905 /* Products */,
@@ -284,25 +276,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4F2C927E1A4BF4B200034887 /* sozai */ = {
-			isa = PBXGroup;
-			children = (
-				4FB72BDD1A7BD0B300115361 /* fantasticPics_aoni.logo.png */,
-				4F2C927F1A4BF4B200034887 /* highBall_haikara.jpg */,
-				4F2C92801A4BF4B200034887 /* highBall_haikara_sozai.png */,
-				4F2C92811A4BF4B200034887 /* highBall_miho.jpg */,
-				4F2C92821A4BF4B200034887 /* highBall_miho_sozai.png */,
-				4F2C92831A4BF4B200034887 /* MUSEE.logo_sozai.png */,
-				4F2C92841A4BF4B200034887 /* MUSEE_summer_sozai.png */,
-				4F2C92861A4BF4B200034887 /* simamura_logo_sozai.png */,
-				4F2C92871A4BF4B200034887 /* simamura_logo_sozai1024*1024].png */,
-				4F2C92881A4BF4B200034887 /* UT_990yen.jpg */,
-				4F2C92891A4BF4B200034887 /* UT_990yen_sozai.png */,
-				4F2C928A1A4BF4B200034887 /* UT_logo_sozai.png */,
-			);
-			path = sozai;
-			sourceTree = "<group>";
-		};
 		4F7A3CEF1A39E36600465A61 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +299,21 @@
 				4FB72BEB1A7D1A1600115361 /* ex6.png */,
 			);
 			path = fantasticPics_ex;
+			sourceTree = "<group>";
+		};
+		4FB72BFB1A7E7A3700115361 /* sozai */ = {
+			isa = PBXGroup;
+			children = (
+				4FB72BFC1A7E7A3800115361 /* doragenai.png */,
+				4FB72BFD1A7E7A3800115361 /* fantasticPics_aoni.logo.png */,
+				4FB72BFE1A7E7A3800115361 /* MUSEE.logo_sozai.png */,
+				4FB72BFF1A7E7A3800115361 /* MUSEE_summer_sozai.png */,
+				4FB72C001A7E7A3800115361 /* simamura_logo_sozai.png */,
+				4FB72C011A7E7A3800115361 /* simamura_logo_sozai1024*1024].png */,
+				4FB72C021A7E7A3800115361 /* uniqlo.png */,
+				4FB72C031A7E7A3800115361 /* uniqlo2.png */,
+			);
+			path = sozai;
 			sourceTree = "<group>";
 		};
 		4FC662A21A70ED0100CCFF97 /* fantasticPics_Image */ = {
@@ -457,12 +445,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2C92921A4BF4B200034887 /* simamura_logo_sozai.png in Resources */,
 				4FB72BF81A7D44AA00115361 /* fantasticPics_twitter.png in Resources */,
+				4FB72C0A1A7E7A3800115361 /* uniqlo.png in Resources */,
+				4FB72C071A7E7A3800115361 /* MUSEE_summer_sozai.png in Resources */,
 				4FC662B71A70ED0100CCFF97 /* fantasticPics_startButton.png in Resources */,
-				4F2C92951A4BF4B200034887 /* UT_990yen_sozai.png in Resources */,
 				AF92B4041A7D39D200AEBBB3 /* Default-568h@2x.png in Resources */,
-				4F2C92961A4BF4B200034887 /* UT_logo_sozai.png in Resources */,
+				4FB72C041A7E7A3800115361 /* doragenai.png in Resources */,
 				AF92B4061A7D39D200AEBBB3 /* Default-736h@3x.png in Resources */,
 				4FB72BDA1A79329F00115361 /* fantasticPics_kaiten.png in Resources */,
 				4FB72BE21A7CD1E800115361 /* fantasticPics_collection.png in Resources */,
@@ -475,30 +463,26 @@
 				4FC662AF1A70ED0100CCFF97 /* fantasticPics_backG.png in Resources */,
 				4FC662AE1A70ED0100CCFF97 /* fantasticPics_back.png in Resources */,
 				4F0A32A91A35EEF600147905 /* LaunchScreen.xib in Resources */,
-				4F2C92901A4BF4B200034887 /* MUSEE_summer_sozai.png in Resources */,
 				4FB72BEF1A7D1A1600115361 /* ex4.png in Resources */,
 				4FB72BED1A7D1A1600115361 /* ex2.png in Resources */,
-				4F2C928F1A4BF4B200034887 /* MUSEE.logo_sozai.png in Resources */,
-				4FB72BDE1A7BD0B300115361 /* fantasticPics_aoni.logo.png in Resources */,
 				4FC662BD1A7101FD00CCFF97 /* fantasticPics_done.png in Resources */,
-				4F2C92941A4BF4B200034887 /* UT_990yen.jpg in Resources */,
 				4FB72BF61A7D446E00115361 /* fantasticPics_instagram.png in Resources */,
-				4F2C928E1A4BF4B200034887 /* highBall_miho_sozai.png in Resources */,
-				4F2C92931A4BF4B200034887 /* simamura_logo_sozai1024*1024].png in Resources */,
+				4FB72C061A7E7A3800115361 /* MUSEE.logo_sozai.png in Resources */,
 				4FB72BD81A79328700115361 /* fantasticPics_close.png in Resources */,
 				4FC662B11A70ED0100CCFF97 /* fantasticPics_clear.png in Resources */,
 				4FC662B41A70ED0100CCFF97 /* fantasticPics_refilter.png in Resources */,
 				4FC662B31A70ED0100CCFF97 /* fantasticPics_first_animation.png in Resources */,
-				4F2C928B1A4BF4B200034887 /* highBall_haikara.jpg in Resources */,
-				4F2C928D1A4BF4B200034887 /* highBall_miho.jpg in Resources */,
 				4FB72BEC1A7D1A1600115361 /* ex1.png in Resources */,
+				4FB72C0B1A7E7A3800115361 /* uniqlo2.png in Resources */,
 				4FC662B61A70ED0100CCFF97 /* fantasticPics_save.png in Resources */,
 				4F0A32A61A35EEF600147905 /* Images.xcassets in Resources */,
 				4FB72BEE1A7D1A1600115361 /* ex3.png in Resources */,
 				4FB72BF11A7D1A1600115361 /* ex6.png in Resources */,
+				4FB72C091A7E7A3800115361 /* simamura_logo_sozai1024*1024].png in Resources */,
 				4FB72BF01A7D1A1600115361 /* ex5.png in Resources */,
-				4F2C928C1A4BF4B200034887 /* highBall_haikara_sozai.png in Resources */,
 				4FB72BE41A7CD23400115361 /* fantasticPics_camera.png in Resources */,
+				4FB72C051A7E7A3800115361 /* fantasticPics_aoni.logo.png in Resources */,
+				4FB72C081A7E7A3800115361 /* simamura_logo_sozai.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

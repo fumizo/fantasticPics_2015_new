@@ -33,12 +33,12 @@
     
     
     index = 0;
-    stampArray[0] = @"UT_990yen_sozai";  //990円のやつ
+    stampArray[0] = @"doragenai";  //セカオワ
     stampArray[1] = @"simamura_logo_sozai";  //しまむらロゴ
     stampArray[2] = @"MUSEE_summer_sozai";   //ミュゼ200円
     stampArray[3] = @"MUSEE.logo_sozai";     //ミュゼロゴ
-    stampArray[4] = @"highBall_miho_sozai";  //うちのハイボールは角だから
-    stampArray[5] = @"highBall_haikara_sozai";  //お好きでしょハイから
+    stampArray[4] = @"uniqlo";  //ユニクロ
+    stampArray[5] = @"uniqlo2";  //UNIQLO
     stampArray[6] = @"fantasticPics_aoni.logo.png";  //青二ロゴ
     
     //    スクロールビューの初期化
@@ -56,7 +56,7 @@
     //    imageView.image =[UIImage imageNamed:@"gurade.png"];
     
     //    UIScrollViewのコンテンツサイズを画像のサイズに合わせる
-    rect.size.width = 1200;
+    rect.size.width = 800;
 //    stampScrool.contentSize = imageView.bounds.size;
     stampScrool.contentSize = rect.size;
     //scrollviewについて　http://oropon.hatenablog.com/entry/20111116/p1
@@ -91,7 +91,7 @@
         //    UIPanGestureRecognizer *pan;
         pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
         //    (void)[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
-        [tapbtn addGestureRecognizer:pan];
+        [tapbtn addGestureRecognizer:pan]; //これがあると四隅ボタンが使えないから一回コメントアウトしたけど関係なかった
     }
     
     stampView.userInteractionEnabled = YES;  //タッチを検出
