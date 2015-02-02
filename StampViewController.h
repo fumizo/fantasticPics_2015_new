@@ -53,6 +53,9 @@
     
     NSData *pngData;
     
+    
+    
+    
 }
 
 -(void)stamp1;
