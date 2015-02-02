@@ -22,7 +22,7 @@
 
 
 //@property (nonatomic, readonly) NSData *imageDate;
-@property (nonatomic) NSData *imageDate;
+@property (nonatomic) NSData *imageData;
 
 
 @end

@@ -10,15 +10,15 @@
 
 @implementation DoneViewController
 
-@synthesize imageDate;
+@synthesize imageData;
 
 -(void)viewDidLoad{
 //    [self.navigationController setNavigationBarHidden:YES animated:YES]; //NavigationBarを非表示
     
-    imageDate = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+    imageData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
     //UIImage *jpgImage = UIGraphicsGetImageFromCurrentImageContext();
     //NSData *jpgData = UIImageJPEGRepresentation(jpgImage, 1.0);
-    doneImage.image = [UIImage imageWithData:imageDate];
+    doneImage.image = [UIImage imageWithData:imageData];
 
 }
 
