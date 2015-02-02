@@ -168,7 +168,7 @@
 //<<<<<<< HEAD
 //            [self.view addSubview:stampView]; //画像に表示する
 //=======
-#warning ここ
+//#warning ここ
             [self.photoView addSubview:stampView]; //画像に表示する
 //>>>>>>> 45750bfebaa321147850f494ad0b819018712b25
 //            num = num +1; //１回スタンプを追加したらnumを１にする、１だったら四隅けしてnumを０に
@@ -449,7 +449,7 @@
     
     // Get PNG Image Data
 // 画質調整ポイント③
-    NSData *pngData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+    pngData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
     //UIImage *jpgImage = UIGraphicsGetImageFromCurrentImageContext();
     //NSData *jpgData = UIImageJPEGRepresentation(jpgImage, 1.0);
     UIImage *captureImage = [UIImage imageWithData:pngData];

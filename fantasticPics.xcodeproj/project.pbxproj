@@ -42,7 +42,6 @@
 		4FB72BF61A7D446E00115361 /* fantasticPics_instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BF51A7D446E00115361 /* fantasticPics_instagram.png */; };
 		4FB72BF81A7D44AA00115361 /* fantasticPics_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BF71A7D44AA00115361 /* fantasticPics_twitter.png */; };
 		4FB72BFA1A7D503F00115361 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BF91A7D503F00115361 /* icon.png */; };
-		4FB72C041A7E7A3800115361 /* doragenai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFC1A7E7A3800115361 /* doragenai.png */; };
 		4FB72C051A7E7A3800115361 /* fantasticPics_aoni.logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFD1A7E7A3800115361 /* fantasticPics_aoni.logo.png */; };
 		4FB72C061A7E7A3800115361 /* MUSEE.logo_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFE1A7E7A3800115361 /* MUSEE.logo_sozai.png */; };
 		4FB72C071A7E7A3800115361 /* MUSEE_summer_sozai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72BFF1A7E7A3800115361 /* MUSEE_summer_sozai.png */; };
@@ -50,6 +49,7 @@
 		4FB72C091A7E7A3800115361 /* simamura_logo_sozai1024*1024].png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C011A7E7A3800115361 /* simamura_logo_sozai1024*1024].png */; };
 		4FB72C0A1A7E7A3800115361 /* uniqlo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C021A7E7A3800115361 /* uniqlo.png */; };
 		4FB72C0B1A7E7A3800115361 /* uniqlo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C031A7E7A3800115361 /* uniqlo2.png */; };
+		4FB72C0D1A7FBACB00115361 /* doragenai.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB72C0C1A7FBACB00115361 /* doragenai.png */; };
 		4FC662AE1A70ED0100CCFF97 /* fantasticPics_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC662A31A70ED0100CCFF97 /* fantasticPics_back.png */; };
 		4FC662AF1A70ED0100CCFF97 /* fantasticPics_backG.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC662A41A70ED0100CCFF97 /* fantasticPics_backG.png */; };
 		4FC662B11A70ED0100CCFF97 /* fantasticPics_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FC662A61A70ED0100CCFF97 /* fantasticPics_clear.png */; };
@@ -124,7 +124,6 @@
 		4FB72BF51A7D446E00115361 /* fantasticPics_instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_instagram.png; path = ../fantasticPics_instagram.png; sourceTree = "<group>"; };
 		4FB72BF71A7D44AA00115361 /* fantasticPics_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fantasticPics_twitter.png; path = ../fantasticPics_twitter.png; sourceTree = "<group>"; };
 		4FB72BF91A7D503F00115361 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		4FB72BFC1A7E7A3800115361 /* doragenai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doragenai.png; sourceTree = "<group>"; };
 		4FB72BFD1A7E7A3800115361 /* fantasticPics_aoni.logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fantasticPics_aoni.logo.png; sourceTree = "<group>"; };
 		4FB72BFE1A7E7A3800115361 /* MUSEE.logo_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MUSEE.logo_sozai.png; sourceTree = "<group>"; };
 		4FB72BFF1A7E7A3800115361 /* MUSEE_summer_sozai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MUSEE_summer_sozai.png; sourceTree = "<group>"; };
@@ -132,6 +131,7 @@
 		4FB72C011A7E7A3800115361 /* simamura_logo_sozai1024*1024].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simamura_logo_sozai1024*1024].png"; sourceTree = "<group>"; };
 		4FB72C021A7E7A3800115361 /* uniqlo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uniqlo.png; sourceTree = "<group>"; };
 		4FB72C031A7E7A3800115361 /* uniqlo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uniqlo2.png; sourceTree = "<group>"; };
+		4FB72C0C1A7FBACB00115361 /* doragenai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doragenai.png; path = ../doragenai.png; sourceTree = "<group>"; };
 		4FC662A31A70ED0100CCFF97 /* fantasticPics_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fantasticPics_back.png; sourceTree = "<group>"; };
 		4FC662A41A70ED0100CCFF97 /* fantasticPics_backG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fantasticPics_backG.png; sourceTree = "<group>"; };
 		4FC662A61A70ED0100CCFF97 /* fantasticPics_clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fantasticPics_clear.png; sourceTree = "<group>"; };
@@ -304,7 +304,7 @@
 		4FB72BFB1A7E7A3700115361 /* sozai */ = {
 			isa = PBXGroup;
 			children = (
-				4FB72BFC1A7E7A3800115361 /* doragenai.png */,
+				4FB72C0C1A7FBACB00115361 /* doragenai.png */,
 				4FB72BFD1A7E7A3800115361 /* fantasticPics_aoni.logo.png */,
 				4FB72BFE1A7E7A3800115361 /* MUSEE.logo_sozai.png */,
 				4FB72BFF1A7E7A3800115361 /* MUSEE_summer_sozai.png */,
@@ -450,7 +450,6 @@
 				4FB72C071A7E7A3800115361 /* MUSEE_summer_sozai.png in Resources */,
 				4FC662B71A70ED0100CCFF97 /* fantasticPics_startButton.png in Resources */,
 				AF92B4041A7D39D200AEBBB3 /* Default-568h@2x.png in Resources */,
-				4FB72C041A7E7A3800115361 /* doragenai.png in Resources */,
 				AF92B4061A7D39D200AEBBB3 /* Default-736h@3x.png in Resources */,
 				4FB72BDA1A79329F00115361 /* fantasticPics_kaiten.png in Resources */,
 				4FB72BE21A7CD1E800115361 /* fantasticPics_collection.png in Resources */,
@@ -472,6 +471,7 @@
 				4FC662B11A70ED0100CCFF97 /* fantasticPics_clear.png in Resources */,
 				4FC662B41A70ED0100CCFF97 /* fantasticPics_refilter.png in Resources */,
 				4FC662B31A70ED0100CCFF97 /* fantasticPics_first_animation.png in Resources */,
+				4FB72C0D1A7FBACB00115361 /* doragenai.png in Resources */,
 				4FB72BEC1A7D1A1600115361 /* ex1.png in Resources */,
 				4FB72C0B1A7E7A3800115361 /* uniqlo2.png in Resources */,
 				4FC662B61A70ED0100CCFF97 /* fantasticPics_save.png in Resources */,
