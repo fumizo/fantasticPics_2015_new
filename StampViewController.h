@@ -30,7 +30,6 @@
     float _angle;
     BOOL _isMoving;
     
-    
     UIImageView *stampImgView;  //画像自体
     UIView *stampView;          //うしろでこれに画像自体を置いてる
     
