@@ -27,18 +27,13 @@
 
     // Do any additional setup after loading the view.
     
-    //    // UIPinchGestureRecognizerを登録
-    //    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchAction:)];
-    //    [stampView addGestureRecognizer:pinch];
-    
-    
     index = 0;
-    stampArray[0] = @"UT_990yen_sozai";  //990円のやつ
+    stampArray[0] = @"doragenai";  //セカオワ
     stampArray[1] = @"simamura_logo_sozai";  //しまむらロゴ
     stampArray[2] = @"MUSEE_summer_sozai";   //ミュゼ200円
     stampArray[3] = @"MUSEE.logo_sozai";     //ミュゼロゴ
-    stampArray[4] = @"highBall_miho_sozai";  //うちのハイボールは角だから
-    stampArray[5] = @"highBall_haikara_sozai";  //お好きでしょハイから
+    stampArray[4] = @"uniqlo";  //ユニクロ
+    stampArray[5] = @"uniqlo2";  //UNIQLO
     stampArray[6] = @"fantasticPics_aoni.logo.png";  //青二ロゴ
     
     //    スクロールビューの初期化
@@ -53,10 +48,8 @@
     stampScrool.frame = rect;
     
     //    //    スクロールビューに背景画像を設定
-    //    imageView.image =[UIImage imageNamed:@"gurade.png"];
-    
-    //    UIScrollViewのコンテンツサイズを画像のサイズに合わせる
-    rect.size.width = 1200;
+        //    UIScrollViewのコンテンツサイズを画像のサイズに合わせる
+    rect.size.width = 800;
 //    stampScrool.contentSize = imageView.bounds.size;
     stampScrool.contentSize = rect.size;
     //scrollviewについて　http://oropon.hatenablog.com/entry/20111116/p1
@@ -91,7 +84,7 @@
         //    UIPanGestureRecognizer *pan;
         pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
         //    (void)[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
-        [tapbtn addGestureRecognizer:pan];
+        [tapbtn addGestureRecognizer:pan]; //これがあると四隅ボタンが使えないから一回コメントアウトしたけど関係なかった
     }
     
     stampView.userInteractionEnabled = YES;  //タッチを検出
@@ -101,16 +94,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-
-
-/*
- //UIGestureRecognizerについて
- //ジェスチャーの同時処理を許可
- - (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
- return YES;
- }
- */
 
 
 //ボタンが押されたときの処理
@@ -185,7 +168,7 @@
 //<<<<<<< HEAD
 //            [self.view addSubview:stampView]; //画像に表示する
 //=======
-#warning ここ
+//#warning ここ
             [self.photoView addSubview:stampView]; //画像に表示する
 //>>>>>>> 45750bfebaa321147850f494ad0b819018712b25
 //            num = num +1; //１回スタンプを追加したらnumを１にする、１だったら四隅けしてnumを０に
@@ -466,7 +449,7 @@
     
     // Get PNG Image Data
 // 画質調整ポイント③
-    NSData *pngData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+    pngData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
     //UIImage *jpgImage = UIGraphicsGetImageFromCurrentImageContext();
     //NSData *jpgData = UIImageJPEGRepresentation(jpgImage, 1.0);
     UIImage *captureImage = [UIImage imageWithData:pngData];
@@ -503,6 +486,7 @@
     UIGraphicsEndImageContext();
      */
 }
+
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     //imageView.image = [info objectForKey:UIImagePickerControllerEditedImage];
 //#warning 画質調整ポイント④
@@ -528,7 +512,7 @@
     
     // Get PNG Image Data
     // 画質調整ポイント③
-    NSData *pngData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+    pngData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
     //UIImage *jpgImage = UIGraphicsGetImageFromCurrentImageContext();
     //NSData *jpgData = UIImageJPEGRepresentation(jpgImage, 1.0);
     UIImage *captureImage = [UIImage imageWithData:pngData];
@@ -547,37 +531,11 @@
     
 }
 
-
-/*
-// 完了を知らせる
-- (void) savingImageIsFinished:(UIImage *)_image didFinishSavingWithError:(NSError *)_error contextInfo:(void *)_contextInfo
-{
-    NSLog(@"ここでインジケータでもだそうか！");
-    
-    UIAlertView *alert;
-    
-    if(_error){//エラーのとき
-        alert = [[UIAlertView alloc] initWithTitle:@""
-                                                        message:@"画像の保存に失敗しました。"
-                                                       delegate:nil
-                                              cancelButtonTitle:nil
-                                              otherButtonTitles:@"OK", nil
-                              ];
-        
-        [alert show];
-//        [alert release];
-        
-    }else{//保存できたとき
-        alert = [[UIAlertView alloc] initWithTitle:@""
-                                                        message:@"画像の保存に成功しました。"
-                                                       delegate:nil
-                                              cancelButtonTitle:nil
-                                              otherButtonTitles:@"OK", nil
-                              ];
-        [alert show];
-    }
+//nsdataを受け渡す
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    DoneViewController *doneVC = segue.destinationViewController;
+    doneVC.imageDate = pngData;
 }
- */
 
 
 //アラートのokしたら画面遷移

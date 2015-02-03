@@ -10,8 +10,16 @@
 
 @implementation DoneViewController
 
+@synthesize imageData;
+
 -(void)viewDidLoad{
 //    [self.navigationController setNavigationBarHidden:YES animated:YES]; //NavigationBarを非表示
+    
+    imageData = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+    //UIImage *jpgImage = UIGraphicsGetImageFromCurrentImageContext();
+    //NSData *jpgData = UIImageJPEGRepresentation(jpgImage, 1.0);
+    doneImage.image = [UIImage imageWithData:imageData];
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{
