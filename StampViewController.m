@@ -33,12 +33,12 @@
     
     
     index = 0;
-    stampArray[0] = @"UT_990yen_sozai";  //990円のやつ
-    stampArray[1] = @"simamura_logo_sozai";  //しまむらロゴ
-    stampArray[2] = @"MUSEE_summer_sozai";   //ミュゼ200円
-    stampArray[3] = @"MUSEE.logo_sozai";     //ミュゼロゴ
-    stampArray[4] = @"highBall_miho_sozai";  //うちのハイボールは角だから
-    stampArray[5] = @"highBall_haikara_sozai";  //お好きでしょハイから
+    stampArray[0] = @"doragenai.png";  //990円のやつ
+    stampArray[1] = @"simamura_logo_sozai.png";  //しまむらロゴ
+    stampArray[2] = @"MUSEE_summer_sozai.png";   //ミュゼ200円
+    stampArray[3] = @"MUSEE.logo_sozai.png";     //ミュゼロゴ
+    stampArray[4] = @"uniqlo.png";  //うちのハイボールは角だから
+    stampArray[5] = @"uniqlo2.png";  //お好きでしょハイから
     stampArray[6] = @"fantasticPics_aoni.logo.png";  //青二ロゴ
     
     //    スクロールビューの初期化
