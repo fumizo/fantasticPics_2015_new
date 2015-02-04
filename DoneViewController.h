@@ -10,7 +10,9 @@
 #import <Social/Social.h>
 
 
-@interface DoneViewController : ViewController
+@interface DoneViewController : ViewController{
+    IBOutlet UIImageView * donePhoto;
+}
 
 -(IBAction)twitter;
 -(IBAction)instagram;

@@ -12,6 +12,8 @@
 
 -(void)viewDidLoad{
 //    [self.navigationController setNavigationBarHidden:YES animated:YES]; //NavigationBarを非表示
+    
+    UIImage* image = [[[UIImage alloc] initWithData:data] autorelease];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
